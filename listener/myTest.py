@@ -36,7 +36,7 @@ def test_main(m_tweepy_OAuthHandler,m_tweepy_stream):
     myListener = TwitterListener()
     api_handle = myListener.get_authenticated()
 
-    m_tweepy_stream.listener = MyStreamListener()
+#    m_tweepy_stream.listener = MyStreamListener()
 
 #    tweepy.Stream.return_value = mock.MagicMock()
 #    my_stream = tweepy.Stream(auth = api_handle.auth,listener=)

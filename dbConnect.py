@@ -17,8 +17,11 @@ class connect_to_DB():
     def __init__(self):
         '''
                constructor initializes an in memory db connection.Store config data and retrieve config data
-               '''
-        self.conn = sqlite3.connect(":memory:")
+
+        '''
+        #Create db in RAM
+        #self.conn = sqlite3.connect(":memory:")
+        self.conn = sqlite3.connect("test.db")
         self.sqlite_store()
 
     def sqlite_store(self):
